@@ -1,0 +1,49 @@
+@import'reset.scss';
+
+h2 {
+	text-aling:center;
+	color:$colorprincipal;
+	padding: $distancia;
+}
+
+header{
+	background: $colorprincipal;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	a {
+		padding:$distancia;
+		background: darken($colorprincipal,25%);
+		color:$colorprincipal;
+	}
+}
+
+article{
+	width:$ancho;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	.col-4{
+		background-color:$colcolor;
+		flex-basis:($ancho/4)-($colpadding*2);
+		padding:$colpadding;
+		p{
+			margin: $distancia;
+		}
+	}
+}
+
+footer{
+	background:invert($colorprincipal);
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	a{
+		background: $colorprincipal;
+		color:lighten($colorprincipal,25%);
+		padding:$distancia;
+		&:hover{
+			background: darken($colorprincipal,10%);
+		}
+	}
+}
