@@ -1,0 +1,57 @@
+@import '_reset.scss';
+
+@mixin mi-mixin-1($radius){
+	border-radius:$radius;
+	border:1px solid black;
+}
+@mixin cuadradizar($size){
+	width: $size;
+	height: $size;
+}
+@mixin rectangulo($size){
+	width: $size*2;
+	height: $size;
+}
+
+%texto_blanco{
+	color:white;
+	text-transform: uppercase;
+	padding: 20px;
+	text-align: center;
+}
+
+$color_principal: steelblue;
+$ancho:1000px;
+
+body{
+	background-color: $color_principal;
+	color:invert($color_principal); 
+	h1{
+		width:$ancho/2;
+		background-color:lighten($color_principal, 10%) ;
+		@include mi-mixin-1(10px);
+		@extend %texto_blanco;
+	}
+}
+
+header{
+	$color_principal:red;
+	background-color:$color_principal;
+	.btn{
+		display: inline-block;
+		@include mi-mixin-1(50%);
+		@include cuadradizar(100px);
+	}
+}
+footer{
+	background-color: $color_principal;
+	.btn{display: inline-block;
+	border:1px solid white;
+	@include rectangulo(100px);}
+}
+
+article{
+	p{
+		@extend %texto_blanco;
+	}
+}

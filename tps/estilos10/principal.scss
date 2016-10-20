@@ -1,0 +1,73 @@
+button {
+	background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+    outline: none;
+    &::-moz-focus-inner{
+	  border: 0;
+	  padding: 0;
+	}
+}
+$color_principal:cyan;
+$color_secundario:orange;
+$color_border:black;
+@mixin tam($size){
+	width: $size;
+	height: $size/3;
+	font-size:$size/10;
+}
+@mixin darkhover($color){
+	&:hover{
+		background-color: darken($color, 10%);
+	}
+}
+.btn-default{
+	background-color:$color_principal;
+	@include darkhover($color_principal);
+}
+.btn-primary{
+	background-color: $color_secundario;
+	@include darkhover($color_secundario);
+}
+.btn-success{
+	background-color: lighten($color_secundario, 30%);
+	@include darkhover(lighten($color_secundario, 30%));
+}
+.btn-info{
+	background-color: darken($color_principal, 30%);
+	@include darkhover(darken($color_principal, 30%));
+}
+.btn-warning{
+	background-color: invert($color_principal);
+	@include darkhover(invert($color_principal));
+}
+.btn-danger{
+	background-color: invert($color_secundario);
+	@include darkhover(invert($color_secundario));
+}
+.btn-link{
+	background-color: mix($color_principal, $color_secundario);
+	@include darkhover(mix($color_principal, $color_secundario));
+}
+.btn{
+	@include tam(150px);
+	border-radius:10%;
+	border: solid 1px $color_border
+}
+.btn-lg{
+	@include tam(150px*1.5);
+}
+.btn-sm{
+	@include tam(150px*0.5);
+}
+.btn-xs{
+	@include tam(150px*0.25);
+}

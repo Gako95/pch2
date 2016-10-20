@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body h1, article p {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center; }
+
+body {
+  background-color: steelblue;
+  color: #b97d4b; }
+  body h1 {
+    width: 500px;
+    background-color: #699bc4;
+    border-radius: 10px;
+    border: 1px solid black; }
+
+header {
+  background-color: red; }
+  header .btn {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px; }
+
+footer {
+  background-color: steelblue; }
+  footer .btn {
+    display: inline-block;
+    border: 1px solid white;
+    width: 200px;
+    height: 100px; }
+
+/*# sourceMappingURL=principal.css.map */

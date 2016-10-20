@@ -1,0 +1,75 @@
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  outline: none; }
+  button::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+.btn-default {
+  background-color: cyan; }
+  .btn-default:hover {
+    background-color: #00cccc; }
+
+.btn-primary {
+  background-color: orange; }
+  .btn-primary:hover {
+    background-color: #cc8400; }
+
+.btn-success {
+  background-color: #ffdb99; }
+  .btn-success:hover {
+    background-color: #ffc966; }
+
+.btn-info {
+  background-color: #006666; }
+  .btn-info:hover {
+    background-color: #003333; }
+
+.btn-warning {
+  background-color: red; }
+  .btn-warning:hover {
+    background-color: #cc0000; }
+
+.btn-danger {
+  background-color: #005aff; }
+  .btn-danger:hover {
+    background-color: #0048cc; }
+
+.btn-link {
+  background-color: #80d280; }
+  .btn-link:hover {
+    background-color: #5ac55a; }
+
+.btn {
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 10%;
+  border: solid 1px black; }
+
+.btn-lg {
+  width: 225px;
+  height: 75px;
+  font-size: 22.5px; }
+
+.btn-sm {
+  width: 75px;
+  height: 25px;
+  font-size: 7.5px; }
+
+.btn-xs {
+  width: 37.5px;
+  height: 12.5px;
+  font-size: 3.75px; }
+
+/*# sourceMappingURL=principal.css.map */
